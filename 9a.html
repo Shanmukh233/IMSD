@@ -1,0 +1,46 @@
+<html>
+    <head>
+    <script>
+         function display()
+         {
+            var n=parseInt(prompt("enter number:"));
+            var fac=1;
+        while(n>=1)
+         {
+            fac=fac*n;
+            n--;
+         }
+         alert(fac);
+         }
+    </script>
+    </head>
+    <body>
+        <input type="button" onclick="display();">
+    </body>
+</html>
+<!--
+<html>
+    <head>
+    <script>
+         function display()
+         {
+            var n=parseInt(document.getElementById("num").value);
+            var a=0,b=1,fac,next;
+            document.write(a + "<br>");
+            document.write(b + "<br>");
+             for(var i=3;i<=n;i++)
+             {
+                next=a+b;
+                document.write(next +"<br>");
+                a=b;
+                b=next;
+             }
+         
+         }
+    </script>
+    </head>
+    <body>
+        number <input type="number" id="num">
+        <input type="button" onclick="display();">
+    </body>
+</html>

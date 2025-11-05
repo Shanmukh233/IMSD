@@ -1,0 +1,30 @@
+<html>
+
+<script>
+function validate() {
+  let name = document.getElementById("name").value;
+  let mobile = document.getElementById("mobile").value;
+  let email = document.getElementById("email").value;
+
+  if (!/^[A-Za-z][A-Za-z0-9]{5,}$/.test(name)) {
+    alert("Invalid name");
+    return;
+  }
+  if (!/^[0-9]{10}$/.test(mobile)) {
+    alert("Invalid mobile");
+    return;
+  }
+  if (!/^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/.test(email)) {
+    alert("Invalid email");
+    return;
+  }
+  alert("All fields are valid");
+}
+</script>
+<body>
+Name: <input id="name"><br>
+Mobile: <input id="mobile"><br>
+Email: <input id="email"><br>
+<button onclick="validate()">Submit</button>
+</body>
+</html>
