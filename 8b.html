@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>weekday display</h1>
+    <h3>result in alert box</h3>
+    <script>
+        // Get the number directly from input field when page loads
+        var day = parseInt(prompt("Enter a number between 1 and 7 to display the weekday:"));
+        var weekday;
+
+        // Switch case to determine the weekday
+        switch(day) {
+            case 1:
+                weekday = "Monday";
+                break;
+            case 2:
+                weekday = "Tuesday";
+                break;
+            case 3:
+                weekday = "Wednesday";
+                break;
+            case 4:
+                weekday = "Thursday";
+                break;
+            case 5:
+                weekday = "Friday";
+                break;
+            case 6:
+                weekday = "Saturday";
+                break;
+            case 7:
+                weekday = "Sunday";
+                break;
+            default:
+                weekday = "Invalid input! Enter a number between 1 and 7.";
+        }
+
+        // Show the result
+        alert(weekday);
+    </script>
+
+
+</body>
+</html>

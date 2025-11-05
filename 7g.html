@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h1>Date Object Properties and Methods</h1>
+
+  <script>
+    // Create Date object
+    let now = new Date();
+
+    document.write("Current Date and Time: " + now + "<br><br>");
+
+    // Date methods
+    document.write("Full Year: " + now.getFullYear() + "<br>");
+    document.write("Month (0-11): " + now.getMonth() + "<br>");
+    document.write("Date (Day of Month): " + now.getDate() + "<br>");
+    document.write("Day of Week (0-6): " + now.getDay() + "<br>");
+    document.write("Hours: " + now.getHours() + "<br>");
+    document.write("Minutes: " + now.getMinutes() + "<br>");
+    document.write("Seconds: " + now.getSeconds() + "<br>");
+    document.write("Milliseconds: " + now.getMilliseconds() + "<br>");
+    document.write("Time (ms since Jan 1, 1970): " + now.getTime() + "<br>");
+    document.write("UTC Date String: " + now.toUTCString() + "<br>");
+    document.write("Locale Date String: " + now.toLocaleDateString() + "<br>");
+    document.write("Locale Time String: " + now.toLocaleTimeString() + "<br>");
+  </script>
+
+</body>
+</html>

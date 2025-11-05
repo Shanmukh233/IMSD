@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <script>
+               function display()
+               {
+                  var username1=document.getElementById("user1").value;
+                   var username2=document.getElementById("user2").value;
+                  if(username1=="aditya" && username2=="aditya")
+                  {
+                         document.write("Your name is correct");
+                  }
+                  else{
+                     document.write("Your name is wrong");
+                  }
+               }
+        </script>
+    </head>
+    <body>
+        Username:<input type="text" id="user1">
+        password:<input type="password" id="user2">
+        <input type="button" value="click me" onclick="display();">
+    </body>
+</html>

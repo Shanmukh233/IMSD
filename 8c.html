@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+    <script>
+
+        var forResult = "FOR loop: ";
+        for (var i = 1; i <= 10; i++) {
+            forResult += i + " ";
+        }
+        document.write(forResult);
+
+        var whileResult = "WHILE loop: ";
+        var j = 1;
+        while (j <= 10) {
+            whileResult += j + " ";
+            j++;
+        }
+        alert(whileResult);
+
+        var doWhileResult = "DO-WHILE loop: ";
+        var k = 1;
+        do {
+            doWhileResult += k + " ";
+            k++;
+        } while (k <= 10);
+        alert(doWhileResult);
+    </script>
+
+<body>
+    <h1>Printing Numbers from 1 to 10</h1>
+    <p>The numbers from 1 to 10 will be displayed in alert boxes for FOR, WHILE, and DO-WHILE loops.</p>
+</body>
+</html>

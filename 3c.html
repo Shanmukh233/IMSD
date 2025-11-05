@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Style Levels Example</title>
+
+  <!-- Internal CSS -->
+  <style>
+    /* Internal CSS Example */
+    h2 {
+      color: green;          /* selector: h2, property: color, value: green */
+      font-size: 20px;       /* selector: h2, property: font-size, value: 20px */
+    }
+
+    p {
+      background-color: lightyellow; /* selector: p, property: background-color, value: lightyellow */
+      padding: 10px;                 /* selector: p, property: padding, value: 10px */
+    }
+
+    /* External CSS (simulated here for demo) */
+    h3 {
+      color: red;             /* selector: h3, property: color, value: red */
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Inline CSS -->
+  <h1 style="color:blue; text-align:center;">
+    Inline CSS → selector: h1, property: color, value: blue
+  </h1>
+
+  <!-- Internal CSS applied -->
+  <h2>Internal CSS → selector: h2, property: color, value: green</h2>
+  <p>Paragraph styled with Internal CSS.</p>
+
+  <!-- External CSS (simulated in same file) -->
+  <h3>External CSS → selector: h3, property: color, value: red</h3>
+
+</body>
+</html>

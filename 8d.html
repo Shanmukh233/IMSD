@@ -1,0 +1,36 @@
+<html>
+<body>
+
+<h3>For-in Loop</h3>
+<div id="in"></div>
+
+<h3>ForEach Loop</h3>
+<div id="each"></div>
+
+<h3>For-of Loop</h3>
+<div id="of"></div>
+
+<script>
+const obj = { name: "Shanmukh", age: 25, city: "Hyderabad" };
+
+let output = "";
+for (let key in obj) {
+    output += key + ": " + obj[key] + "<br>";
+}
+document.getElementById("in").innerHTML = output;
+
+output = "";
+Object.entries(obj).forEach(([key, value]) => {
+    output += key + ": " + value + "<br>";
+});
+document.getElementById("each").innerHTML = output;
+
+output = "";
+for (let [key, value] of Object.entries(obj)) {
+    output += key + ": " + value + "<br>";
+}
+document.getElementById("of").innerHTML = output;
+</script>
+
+</body>
+</html>

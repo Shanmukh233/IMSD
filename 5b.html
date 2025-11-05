@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Background Image Example</title>
+  <style>
+    body {
+      height: 200vh; /* make page scrollable */
+      margin: 0;
+    }
+    .bg {
+      position: fixed;       /* stays in place while scrolling */
+      top: 50%;              /* halfway down */
+      left: 50%;             /* center horizontally */
+      transform: translate(-50%, -50%) rotateX(20deg); /* move to center & tilt */
+      width: 400px;
+      height: 200px;
+      background: url("https://via.placeholder.com/400x200") no-repeat center/cover;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="bg"></div>
+
+  <h1 style="margin:20px;">Scroll the page</h1>
+  <p style="margin:20px;">The background image is fixed, placed halfway down, and tilted horizontally.</p>
+  <p style="margin:20px;">Add more text here... keep scrolling...</p>
+
+</body>
+</html>
